@@ -1,0 +1,6 @@
+# Promtail конфигурационный файл
+
+PROMTAIL_CONFIG="/etc/promtail/promtail-local-config.yaml"
+PROMTAIL_USER="promtail"
+PROMTAIL_GROUP="promtail"
+

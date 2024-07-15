@@ -1,0 +1,11 @@
+#!/sbin/openrc-run
+
+command="/usr/bin/promtail"
+command_args="-config.file=${PROMTAIL_CONFIG}"
+command_user="${PROMTAIL_USER}:${PROMTAIL_GROUP}"
+
+depend() {
+    need net
+    use dns logger
+}
+
